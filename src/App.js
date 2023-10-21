@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { StateAndEffectComponent } from "./components/StateAndEffectComponent";
+import { MemoAndCallbackComponent } from "./components/MemoAndCallbackComponent";
+import { ContextAndReducerComponent } from "./components/ContextAndReducerComponent";
+import { CustomHooksComponent } from "./components/CustomHookComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StateAndEffectComponent />
+      <MemoAndCallbackComponent />
+      <ContextAndReducerComponent />
+      <CustomHooksComponent />
     </div>
   );
 }
